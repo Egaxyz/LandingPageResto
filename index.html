@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SteakHouse - Premium Steak Terbaik di Indonesia</title>
+    <meta
+      name="description"
+      content="Nikmati pengalaman makan steak premium dengan kualitas terbaik di SteakHouse. Daging pilihan, dimasak oleh chef profesional, dan harga terjangkau."
+    />
+    <meta
+      name="keywords"
+      content="steak, daging premium, makanan enak, restoran steak, makan malam spesial"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -42,19 +50,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
+                <a class="nav-link" href="#home">Beranda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#product">Product</a>
+                <a class="nav-link" href="#produk">Produk</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
+                <a class="nav-link" href="#keunggulan">Keunggulan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#testimoni">Testimoni</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#kontak">Kontak</a>
               </li>
             </ul>
           </div>
@@ -63,6 +71,7 @@
     </header>
 
     <main>
+      <!-- Hero Section -->
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -92,17 +101,21 @@
               src="Images/steaks.jpg"
               class="d-block w-100"
               style="object-fit: cover; height: 600px"
-              alt="Premium Steaks"
+              alt="Steak Premium"
             />
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Premium Quality Steaks</h1>
-                <p class="">
-                  Our finest selection of aged beef, perfectly marbled for
-                  maximum flavor.
+                <h1 class="display-4 fw-bold">
+                  Steak Premium Kualitas Terbaik
+                </h1>
+                <p class="lead">
+                  Daging pilihan dengan marbling sempurna untuk cita rasa
+                  maksimal.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-secondary">Order Now</a>
+                  <a class="btn btn-lg btn-danger" href="#produk"
+                    >Pesan Sekarang</a
+                  >
                 </p>
               </div>
             </div>
@@ -111,14 +124,19 @@
             <img
               src="Images/steak.jpg"
               class="d-block w-100"
-              style="object-fit: cover; height: 500px"
-              alt="Grilled Steak"
+              style="object-fit: cover; height: 600px"
+              alt="Steak Sempurna"
             />
             <div class="container">
               <div class="carousel-caption">
-                <h1>Perfectly Grilled Steaks</h1>
-                <p>Expertly cooked to your preference by our master chefs.</p>
-                <p><a class="btn btn-lg btn-secondary">View Menu</a></p>
+                <h1 class="display-4 fw-bold">Dimasak dengan Sempurna</h1>
+                <p class="lead">
+                  Diolah oleh chef profesional sesuai tingkat kematangan favorit
+                  Anda.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-danger" href="#produk">Lihat Menu</a>
+                </p>
               </div>
             </div>
           </div>
@@ -126,17 +144,20 @@
             <img
               src="Images/soda.jpg"
               class="d-block w-100"
-              style="height: 500px; object-fit: cover"
-              alt="Refreshing Drinks"
+              style="height: 600px; object-fit: cover"
+              alt="Minuman Segar"
             />
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>Refreshing Beverages</h1>
-                <p>
-                  The perfect companion to your meal - try our signature sodas.
+                <h1 class="display-4 fw-bold">Minuman Penyegar</h1>
+                <p class="lead">
+                  Temani steak Anda dengan minuman signature kami yang
+                  menyegarkan.
                 </p>
                 <p>
-                  <a class="btn btn-lg btn-secondary">Drink Menu</a>
+                  <a class="btn btn-lg btn-danger" href="#produk"
+                    >Menu Minuman</a
+                  >
                 </p>
               </div>
             </div>
@@ -161,178 +182,252 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <div id="product">
-        <div class="container marketing">
-          <div class="row text-center">
-            <div class="col-lg-6 mb-5 mb-lg-0">
-              <div class="d-flex justify-content-center mb-4">
-                <img
-                  src="Images/steak.jpg"
-                  class="rounded-circle"
-                  width="140"
-                  height="140"
-                  alt="Premium Steak"
-                  style="object-fit: cover"
-                />
-              </div>
-              <h2 class="fw-normal">Premium Food</h2>
-              <p class="px-4">
-                Enjoy our selection of premium quality steaks, cooked to
-                perfection by our expert chefs using the finest ingredients.
-              </p>
-              <p>
-                <a class="btn btn-dark" href="#">Explore Menu &raquo;</a>
-              </p>
-            </div>
 
-            <div class="col-lg-6">
-              <div class="d-flex justify-content-center mb-4">
-                <img
-                  src="Images/soda.jpg"
-                  class="rounded-circle"
-                  width="140"
-                  height="140"
-                  alt="Refreshing Drinks"
-                  style="object-fit: cover"
-                />
-              </div>
-              <h2 class="fw-normal">Refreshing Drinks</h2>
-              <p class="px-4">
-                Complement your meal with our signature beverages, crafted to
-                refresh and enhance your dining experience.
-              </p>
-              <p>
-                <a class="btn btn-dark" href="#">View Drinks &raquo;</a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="blog" class="py-5 bg-light">
+      <!-- Benefits Section -->
+      <section class="py-5 bg-light" id="keunggulan">
         <div class="container">
-          <div class="row g-5 py-5">
-            <div class="col-12 text-center mb-5">
-              <h2 class="display-5 fw-bold">Latest Updates</h2>
+          <div class="row text-center mb-5">
+            <div class="col-12">
+              <h2 class="display-5 fw-bold">Kenapa Memilih SteakHouse?</h2>
               <p class="lead">
-                Discover tips, recipes, and news from our kitchen
+                Kami memberikan pengalaman makan steak terbaik untuk Anda
               </p>
             </div>
-
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
-                <img
-                  src="Images/cookingtips.jpg"
-                  class="card-img-top"
-                  style="height: 200px; object-fit: cover"
-                  alt="Cooking Tips"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">5 Tips for Perfect Steak</h5>
-                  <p class="card-text">
-                    Learn professional techniques to cook steak like a chef at
-                    home.
-                  </p>
-                  <a href="#" class="btn btn-outline-dark">Read More</a>
-                </div>
-                <div class="card-footer bg-white">
-                  <small class="text-muted">Posted 3 days ago</small>
-                </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 mb-4">
+              <div class="p-4">
+                <i class="bi bi-star-fill benefit-icon"></i>
+                <h3>Bahan Premium</h3>
+                <p>
+                  Daging impor pilihan dengan kualitas terbaik dan proses aging
+                  yang sempurna
+                </p>
               </div>
             </div>
+            <div class="col-md-4 mb-4">
+              <div class="p-4">
+                <i class="bi bi-egg-fried benefit-icon"></i>
+                <h3>Chef Profesional</h3>
+                <p>
+                  Dimasak oleh chef berpengalaman dengan teknik terbaik untuk
+                  hasil maksimal
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="p-4">
+                <i class="bi bi-cash-coin benefit-icon"></i>
+                <h3>Harga Terjangkau</h3>
+                <p>
+                  Kualitas premium dengan harga yang bersaing dan paket spesial
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
+      <!-- Product Section -->
+      <section class="py-5" id="produk">
+        <div class="container">
+          <div class="row text-center mb-5">
+            <div class="col-12">
+              <h2 class="display-5 fw-bold">Menu Andalan Kami</h2>
+              <p class="lead">
+                Pilihan steak premium untuk memanjakan lidah Anda
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
                 <img
                   src="Images/steak.jpg"
                   class="card-img-top"
-                  style="height: 200px; object-fit: cover"
-                  alt="New Menu"
+                  alt="Steak Sirloin"
+                  style="height: 250px; object-fit: cover"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Summer Special Menu</h5>
+                  <h5 class="card-title">Sirloin Steak</h5>
                   <p class="card-text">
-                    Discover our new seasonal dishes perfect for warm weather
-                    dining.
+                    Potongan daging sirloin premium dengan tekstur lembut dan
+                    rasa yang kaya.
                   </p>
-                  <a href="#" class="btn btn-outline-dark">Read More</a>
-                </div>
-                <div class="card-footer bg-white">
-                  <small class="text-muted">Posted 1 week ago</small>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-bold text-danger">Rp 125.000</span>
+                    <button
+                      class="btn btn-sm btn-dark order-btn"
+                      data-product="Sirloin Steak"
+                    >
+                      Pesan Sekarang
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="card h-100 shadow-sm">
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="Images/steaks.jpg"
+                  class="card-img-top"
+                  alt="Steak Ribeye"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ribeye Steak</h5>
+                  <p class="card-text">
+                    Steak dengan marbling sempurna, sangat juicy dan penuh cita
+                    rasa.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-bold text-danger">Rp 150.000</span>
+                    <button
+                      class="btn btn-sm btn-dark order-btn"
+                      data-product="Ribeye Steak"
+                    >
+                      Pesan Sekarang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
                 <img
                   src="Images/soda.jpg"
                   class="card-img-top"
-                  style="height: 200px; object-fit: cover"
-                  alt="Drink Pairing"
+                  alt="Minuman Signature"
+                  style="height: 250px; object-fit: cover"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Perfect Drink Pairings</h5>
+                  <h5 class="card-title">Signature Soda</h5>
                   <p class="card-text">
-                    Expert recommendations for beverages that complement our
-                    dishes.
+                    Minuman soda segar dengan campuran buah-buahan pilihan.
                   </p>
-                  <a href="#" class="btn btn-outline-dark">Read More</a>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-bold text-danger">Rp 35.000</span>
+                    <button
+                      class="btn btn-sm btn-dark order-btn"
+                      data-product="Signature Soda"
+                    >
+                      Pesan Sekarang
+                    </button>
+                  </div>
                 </div>
-                <div class="card-footer bg-white">
-                  <small class="text-muted">Posted 2 weeks ago</small>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                  class="card-img-top"
+                  alt="Tenderloin Steak"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Tenderloin Steak</h5>
+                  <p class="card-text">
+                    Potongan paling lembut dengan tekstur seperti mentega.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-bold text-danger">Rp 175.000</span>
+                    <button
+                      class="btn btn-sm btn-dark order-btn"
+                      data-product="Tenderloin Steak"
+                    >
+                      Pesan Sekarang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                  class="card-img-top"
+                  alt="Wagyu Steak"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Wagyu Steak</h5>
+                  <p class="card-text">
+                    Daging wagyu import dengan kualitas A5, pengalaman steak tak
+                    terlupakan.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-bold text-danger">Rp 350.000</span>
+                    <button
+                      class="btn btn-sm btn-dark order-btn"
+                      data-product="Wagyu Steak"
+                    >
+                      Pesan Sekarang
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-4 mb-4">
+              <div class="card product-card h-100">
+                <img
+                  src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                  class="card-img-top"
+                  alt="Set Komplit"
+                  style="height: 250px; object-fit: cover"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Set Komplit SteakHouse</h5>
+                  <p class="card-text">
+                    1 Steak pilihan + Kentang + Sayuran + Minuman + Dessert.
+                  </p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <span class="fw-bold text-danger">Rp 195.000</span>
+                    <button
+                      class="btn btn-sm btn-dark order-btn"
+                      data-product="Set Komplit SteakHouse"
+                    >
+                      Pesan Sekarang
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="about" class="py-5">
-        <div class="container">
-          <div class="row align-items-center py-5">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img
-                src="Images/location.jpg"
-                class="img-fluid rounded shadow"
-                alt="Our Restaurant"
-              />
-            </div>
-            <div class="col-lg-6">
-              <h2 class="display-5 fw-bold mb-4">Our Story</h2>
-              <p class="lead">Passion for quality since 2010</p>
-              <p>
-                Founded by master chef Ega Gunawan Novaldi, our restaurant has
-                been serving premium quality steaks and beverages for over a
-                decade. We source only the finest ingredients from trusted local
-                suppliers.
-              </p>
-              <p>
-                Our mission is to provide an unforgettable dining experience
-                through exceptional food, attentive service, and a warm
-                atmosphere.
-              </p>
-              <div class="d-flex pt-3">
-                <div class="pe-4">
-                  <h3>100+</h3>
-                  <p>Five-star reviews</p>
-                </div>
-                <div class="pe-4">
-                  <h3>50+</h3>
-                  <p>Menu items</p>
-                </div>
-                <div>
-                  <h3>12</h3>
-                  <p>Awards won</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="py-5 bg-light">
+      </section>
+
+      <!-- Testimonial Section -->
+      <section class="py-5 bg-light" id="testimoni">
         <div class="container">
           <div class="row text-center py-3">
             <div class="col-12 mb-5">
-              <h2 class="display-5 fw-bold">What Our Customers Say</h2>
+              <h2 class="display-5 fw-bold">Apa Kata Pelanggan Kami?</h2>
+              <p class="lead">Bukti nyata kepuasan pelanggan SteakHouse</p>
             </div>
 
             <div class="col-md-4 mb-4">
@@ -345,7 +440,8 @@
                   <i class="bi bi-star-fill text-warning"></i>
                 </div>
                 <p class="mb-4">
-                  "The best steak I've ever had! Perfectly cooked and seasoned."
+                  "Steak terbaik yang pernah saya coba! Teksturnya lembut dan
+                  rasanya sangat kaya."
                 </p>
                 <div>
                   <img
@@ -353,10 +449,10 @@
                     class="rounded-circle mb-2"
                     width="40%"
                     height="55%"
-                    alt="Customer"
+                    alt="Pelanggan"
                   />
                   <h6 class="mb-0">Jhonson Batista</h6>
-                  <small class="text-muted">Regular Customer</small>
+                  <small class="text-muted">Pelanggan Setia</small>
                 </div>
               </div>
             </div>
@@ -371,8 +467,8 @@
                   <i class="bi bi-star-fill text-warning"></i>
                 </div>
                 <p class="mb-4">
-                  "Excellent service and the drinks pairing recommendation was
-                  spot on!"
+                  "Pelayanan sangat memuaskan dan rekomendasi tingkat kematangan
+                  steaknya tepat sekali!"
                 </p>
                 <div>
                   <img
@@ -380,7 +476,7 @@
                     class="rounded-circle mb-2"
                     width="40%"
                     height="55%"
-                    alt="Customer"
+                    alt="Pelanggan"
                   />
                   <h6 class="mb-0">Akira Nakai</h6>
                   <small class="text-muted">Food Blogger</small>
@@ -398,8 +494,8 @@
                   <i class="bi bi-star-half text-warning"></i>
                 </div>
                 <p class="mb-4">
-                  "Consistently great quality. My go-to place for special
-                  occasions."
+                  "Kualitas selalu konsisten. Tempat favorit saya untuk acara
+                  spesial."
                 </p>
                 <div>
                   <img
@@ -407,52 +503,114 @@
                     class="rounded-circle mb-2"
                     width="40%"
                     height="55%"
-                    alt="Customer"
+                    alt="Pelanggan"
                   />
                   <h6 class="mb-0">Cendy Wingsman</h6>
-                  <small class="text-muted">Local Resident</small>
+                  <small class="text-muted">Warga Lokal</small>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-5 text-white cta-section" id="cta">
+        <div class="container py-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="display-5 fw-bold mb-4">
+                Siap Menikmati Steak Terbaik?
+              </h2>
+              <p class="lead mb-5">
+                Pesan sekarang dan dapatkan pengalaman makan steak yang tak
+                terlupakan. Khusus hari ini, gratis minuman signature untuk
+                setiap pemesanan!
+              </p>
+              <button
+                class="btn btn-danger btn-lg order-btn"
+                data-product="Pesan Sekarang"
+              >
+                Pesan Via WhatsApp
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer
       class="container-fluid text-white py-5"
-      id="contact"
+      id="kontak"
       style="background-color: #343a40; margin-bottom: 0"
     >
       <div class="container">
         <div class="row">
-          <!-- Contact Information -->
-          <div class="col-md-6 mb-4">
-            <h5 class="fw-bold">Contact Us</h5>
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">SteakHouse</h5>
+            <p>
+              <i class="bi bi-lightning-charge-fill me-2 text-warning"></i
+              >Premium Steak Terbaik
+            </p>
+            <p>
+              Kami berkomitmen memberikan pengalaman makan steak terbaik dengan
+              bahan premium dan pelayanan istimewa.
+            </p>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Hubungi Kami</h5>
             <p><i class="bi bi-telephone-fill me-2"></i> 085806428673</p>
             <p>
               <i class="bi bi-envelope-fill me-2"></i>
               egagunawannovaldi@gmail.com
             </p>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i> Cugenang, Cianjur, Jawa
+              Barat
+            </p>
           </div>
-          <!-- Follow Us -->
-          <div class="col-md-6 mb-4">
-            <h5 class="fw-bold">Follow Us</h5>
+
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold">Ikuti Kami</h5>
+            <p>Dapatkan info promo dan menu terbaru</p>
             <a
               href="https://web.facebook.com/ezio.joestarii"
               target="_blank"
               class="text-white me-3"
-              ><i class="bi bi-facebook"></i
+              ><i class="bi bi-facebook fs-4"></i
             ></a>
             <a
               href="https://www.instagram.com/ezegn13/"
               target="_blank"
               class="text-white me-3"
-              ><i class="bi bi-instagram"></i
+              ><i class="bi bi-instagram fs-4"></i
             ></a>
+            <a href="#" class="text-white me-3"
+              ><i class="bi bi-tiktok fs-4"></i
+            ></a>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">&copy; 2023 SteakHouse. All Rights Reserved.</p>
           </div>
         </div>
       </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Script/script.js"></script>
+    <a
+      href="https://wa.me/6285806428673?text=Hai%2C%20saya%20ingin%20bertanya%20tentang%20menu%20yang%20tersedia"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="Chat via WhatsApp"
+    >
+      <img
+        src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png"
+        alt="WhatsApp"
+      />
+    </a>
   </body>
 </html>

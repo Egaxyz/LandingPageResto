@@ -1,29 +1,20 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const mobileMenuButton = document.querySelector(".mobile-menu-button");
-  const mobileMenu = document.querySelector(".mobile-menu");
-
-  mobileMenuButton.addEventListener("click", function () {
-    mobileMenu.classList.toggle("hidden");
+document.querySelectorAll(".order-btn").forEach((button) => {
+  button.addEventListener("click", function () {
+    const productName = this.getAttribute("data-product");
+    const phoneNumber = "+6285806428673";
+    const message = `Halo SteakHouse, saya ingin memesan ${productName}. Bisa dibantu?`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
   });
+});
 
-  let currentSlide = 1;
-  const totalSlides = 3;
-
-  function nextSlide() {
-    currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
-    document.getElementById(`carousel-${currentSlide}`).checked = true;
-  }
-
-  setInterval(nextSlide, 5000);
-
-  const carousel = document.querySelector(".carousel");
-  carousel.addEventListener("mouseenter", function () {
-    clearInterval(interval);
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
   });
-
-  carousel.addEventListener("mouseleave", function () {
-    interval = setInterval(nextSlide, 5000);
-  });
-
-  let interval = setInterval(nextSlide, 5000);
 });
